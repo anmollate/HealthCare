@@ -18,9 +18,6 @@ export function Navbar() {
             <li><a href="/#doctors" className={styles.link}>Doctors</a></li>
             <li><Link to="/ai-assistant" className={styles.link}>AI Health Assistance</Link></li>
           </ul>
-          <a href="/#appointment" className={styles.cta}>
-            Book Appointment
-          </a>
         </nav>
       </div>
     </header>
