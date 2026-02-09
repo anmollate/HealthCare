@@ -1,21 +1,16 @@
 
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { Services } from './components/Services';
-import { Doctors } from './components/Doctors';
-import { Appointment } from './components/Appointment';
-import { Footer } from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { AIHealthAssistant } from './pages/AIHealthAssistant';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Services />
-      <Doctors />
-      <Appointment />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ai-assistant" element={<AIHealthAssistant />} />
+      </Routes>
+    </Router>
   );
 }
 
